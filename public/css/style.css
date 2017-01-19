@@ -1,0 +1,63 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+section {
+  padding: 0px;
+}
+
+a {
+  color: #00B7FF;
+}
+
+// INTRODUCTION INTRODUCTION INTRODUCTION INTRODUCTION INTRODUCTION INTRODUCTION INTRODUCTION INTRODUCTION 
+.intro-description {
+  width: 500px;
+}
+
+.intro-marker {
+  // float: left;
+  display: block;
+}
+
+.intro-picture {
+  border-radius: 100%;
+  display: inline-block;
+  float: left;
+  margin: 10px;
+  height: 200px;
+  width: 200px;
+}
+
+.intro-picture:hover {
+  box-shadow: 2.5px 2.5px 1px grey;
+}
+
+//right of intro
+.intro-list-stack {
+  list-style-type: none;
+} 
+
+.intro-list-item {
+  list-style-type: none;
+  font-size: 20px;
+  padding: 5px 5px;
+}
+
+.intro-tech-stack {
+  text-align: center;
+}
+
+// INTRODUCTION END INTRODUCTION END INTRODUCTION END INTRODUCTION END INTRODUCTION END INTRODUCTION END INTRODUCTION END 
+
+// PROJECT PROJECT PROJECT PROJECT PROJECT PROJECT PROJECT PROJECT PROJECT PROJECT PROJECT PROJECT PROJECT PROJECT PROJECT 
+.projects {
+  background-image: url('/images/space.jpg') no-repeat center center fixed;
+  height: 500px;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+//PROJECT END PROJECT END PROJECT END PROJECT END PROJECT END PROJECT END PROJECT END PROJECT END PROJECT END PROJECT END 
