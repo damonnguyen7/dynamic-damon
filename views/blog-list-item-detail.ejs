@@ -12,13 +12,15 @@
     <section id="blog-list-item-detail">
       <div class="container text-center">
         <div class="col-xs-6 col-xs-offset-3">
-          <h1>Why you should join a Brazilian Jiu-Jitsu gym</h1>
+          <h1><%- blog.title %></h1>
         </div>
         <div class="col-xs-8 col-xs-offset-2">
           <img src="/images/damon.jpg"> <span>Written by Damon Nguyen</span>
+          <br>
+          <span>Last Updated: <%- blog.date %></span>
         </div>
         <div class="col-xs-8 col-xs-offset-2">
-          <p>Brazilian Jiu-Jitsu is often likened to a game of human chess. If you don’t like to work out at a gym because you get bored, you’re not alone. Many of our students were tired of going to the gym, and they couldn’t find new songs or audio books to entertain them on the treadmill. They found BJJ to be the perfect workout because it requires a high level of concentration proportional to the amount of calories burned and pounds lost. What’s more, you’ll still learn to defend yourself. It’s a win-win situation.</p>
+          <p><%- blog.description %></p>
         </div>
       </div>
     </section>

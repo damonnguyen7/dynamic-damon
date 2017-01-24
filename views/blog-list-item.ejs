@@ -1,8 +1,10 @@
-<div id="blog-list-item" class="col-xs-4">
-  <h2>Why you should join a Brazilian Jiu-Jitsu gym</h2>
-  <p class="truncate">Brazilian Jiu-Jitsu is often likened to a game of human chess. If you don’t like to work out at a gym because you get bored, you’re not alone. Many of our students were tired of going to the gym, and they couldn’t find new songs or audio books to entertain them on the treadmill. They found BJJ to be the perfect workout because it requires a high level of concentration proportional to the amount of calories burned and pounds lost. What’s more, you’ll still learn to defend yourself. It’s a win-win situation.</p>
-  <div class="blog-list-item-footer">
-    <img src="/images/damon.jpg"> <span>Written by Damon Nguyen</span>
-    <a href="/blog/detail" class="btn btn-primary btn-xs">read more</a>
+<% for(var i = 0; i < blogs.length; i++) { %>
+  <div id="blog-list-item" class="col-xs-4">
+    <h2><%- blogs[i].title %></h2>
+    <p class="truncate"><%- blogs[i].description %></p>
+    <div class="blog-list-item-footer">
+      <img src="/images/damon.jpg"> <span>Written by Damon Nguyen</span>
+      <a href="/blog/detail/<%- blogs[i]._id %>" class="btn btn-primary btn-xs">read more</a>
+    </div>
   </div>
-</div>
+<% } %>

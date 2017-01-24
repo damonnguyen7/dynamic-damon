@@ -2,25 +2,16 @@
 <html>
 <head>
   <title>Damon's Blog</title>
-  <link rel='stylesheet' href='/css/bootstrap.css' />
-  <link rel='stylesheet' href='/css/compiled.css' />
+  <%- include css.ejs %>
 </head>
 <body id="blog-list">
-  
   <!-- navigation bar -->
   <%- include navbar.ejs %>
-
   <!-- hook -->
-  <section id="hook">
-    <div class="container text-center">
-      <h1>Welcome to my blog page! <br> -Damon Nguyen</h1>
-    </div>
-  </section>
+  <%- include blog-hook.ejs %>
+  <!-- blog list container -->
+  <%- include blog-list-container.ejs %>
 
-
-  <section id="blog-list-container container">
-    <%- include blog-list-item.ejs %>
-  </section>
 
 
 <script src="https://use.fontawesome.com/78f754ebab.js"></script>

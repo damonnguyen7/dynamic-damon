@@ -2,221 +2,28 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/css/bootstrap.css' />
-    <link rel='stylesheet' href='/css/compiled.css' />
+    <%- include css.ejs %>
   </head>
   <body>
     <!-- navbar -->
     <%- include navbar.ejs %>
-
     <!-- Canvas graphics -->
-    <section id="space">
-      <div id="large-header" class="large-header">
-        <canvas id="demo-canvas"></canvas>
-        <h1 class="main-title">Damon <span class="thin">Nguyen</span></h1>
-        <h3 class="secondary-title">Full Stack Engineer</h3>
-        <div id="canvasNavBar">
-          <ul>
-            <li class="canvasLi"><a class="afb" target="_blank" href="https://www.facebook.com/damonsauce"><i class="fa fa-facebook fa-3x"></i></a></li>
-            <li class="canvasLi"><a class="agh" target="_blank" href="https://github.com/damonnguyen92"><i class="fa fa-github fa-3x"></i></a></li>
-            <li class="canvasLi"><a class="ali" target="_blank" href="https://www.linkedin.com/in/damonnguyen92"><i class="fa fa-linkedin fa-3x"></i></a></li>
-            <li class="canvasLi"><a class="agp" target="_blank" href="https://plus.google.com/u/0/100786260637340757965"><i class="fa fa-google-plus fa-3x"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
+    <%- include space.ejs %>
     <!-- introduction -->
-    <section class="intro" id="introduction">
-        <div class="container">
-          <div class="col-xs-6 left">
-            <div class="intro-marker">
-             <h1>San Leandro, CA <i style="color: #a94442;" class="fa fa-map-marker" aria-hidden="true"></i></h1>
-            </div>
-            <div>
-              <img class="intro-picture" src="/images/damon.jpg">
-              <div>
-                <p style="padding-top: 20px;" class="intro-description">I am a full-stack software engineer who has experience working in the frontend and backend. I enjoy building data rich, beautifully designed, scalable, and high performant web application. I enjoy coding because of the never ending learning and solving complex challenges.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-6 right">
-            <div class="intro-tech-stack">
-              <h1>Tech Stack <i class="fa fa-cog" aria-hidden="true"></i></h1>
-              <ul class="intro-list-stack">
-                <li class="intro-list-item">JavaScript</li>
-                <li class="intro-list-item">HTML</li>
-                <li class="intro-list-item">CSS</li>
-                <li class="intro-list-item">React/Redux</li>
-                <li class="intro-list-item">Angular</li>
-                <li class="intro-list-item">Node/Express</li>
-                <li class="intro-list-item">Less</li>
-                <li class="intro-list-item">Git/GitHub</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="intro-download-resume">
-          <a href="/files/DamonNguyensresume.pdf" target="_blank">download resume</a>
-        </div>
-    </section>
-
+    <%- include introduction.ejs %>
     <!-- projects -->
-    <section id="projects" class="text-center">
-      <div class="container">
-        <div class="col-xs-6 left">
-          <h2 style="color: white;">JobPlus+</h2>
-          <div class="projects-description">
-            <p>A rehashed approach to traditional job search that aims to reduce job seekers relentless abuse of browser tabs to get an idea of what a jobs all about. Namely, Job+ aggregates data from common sources like Google, Yelp and Indeed so that each does not have to be visited individually for every possible job of interest.</p>
-          </div>
-          <div class="projects-stack">
-            <h4 style="color: #FFFFFF;"><i class="fa fa-user-circle fa-2x" aria-hidden="true"></i> Full Stack</h4>
-            <ul class="projects-stack-list">
-              <i class="fa fa-list fa-2x" aria-hidden="true"></i>
-              <li class="projects-stack-list-item">React/Redux</li>
-              <li class="projects-stack-list-item">Node/Express</li>
-              <li class="projects-stack-list-item">Webpack</li>
-              <li class="projects-stack-list-item">Maps API</li>
-              <li class="projects-stack-list-item">Google Places API</li>
-              <li class="projects-stack-list-item">Yelp API</li>
-              <li class="projects-stack-list-item">Indeed API</li>
-            </ul>
-          </div>
-          <div class="projects-src">
-            <a href="https://github.com/nodj-sf/jobplus" target="_blank">
-              <i class="fa fa-github-square fa-2x" aria-hidden="true"></i> JobPlus+ source code
-            </a>
-          </div>
-        </div>
-        <div class="col-xs-6 right">
-          <a href="http://jobplus.online/" target="_blank">
-            <img class="projects-image-top" src="/images/jobplus2.png" alt="jobplus landing page">
-            <img class="projects-image-bottom" src="/images/jobplus.png" alt="jobplus information page">
-            <span><i class="fa fa-external-link fa-5x top" aria-hidden="true"></i></span>
-            <span><i class="fa fa-external-link fa-5x bottom" aria-hidden="true"></i></span>
-          </a>
-        </div>
-      </div>
-    </section>
-
+    <%- include project.ejs %>
     <!-- passion -->
-    <section id="passion">
-      <div class="container text-center">
-        <div class="col-xs-12 passion">
-          <h3>Understanding my passion</h3>
-          <img src="/images/passion.png">
-          <p>The amazing thing about coding is the ability to solve problems not just one, but many ways. We live in a world where technology is used as a tool to help make people's lives easier wether that is paying your bills with your phone or calling an Uber driver to pick you up wherever you are. I believe that one of the key to happiness is to help others and that is why I strive to become a better coder everyday because coding is a path I can take to help others. I am an aspiring software engineer who has a passion for solving real world problems that has the ability to impact people's lives.</p>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- projects -->
-    <section id="project2" class="text-center">
-      <div class="container">
-        <div class="col-xs-6 left">
-          <h2 style="color: white;">Pokédex</h2>
-          <div class="projects-description">
-            <p>Pokédex is a project that I have built in two days for fun. In the Pokémon show the Pokémon trainers would carry a device called the pokédex and that device is used for displaying information about a specific Pokémon. I was inspired and wanted to create something similar, so I decided to aggregate hundreds of Pokémon data and displayed their basic stats visually with a bar and radar chart.</p>
-          </div>
-          <div class="projects-stack">
-            <h4 style="color: #FFFFFF;"><i class="fa fa-user-circle fa-2x" aria-hidden="true"></i> Full Stack</h4>
-            <ul class="projects-stack-list">
-              <i class="fa fa-list fa-2x" aria-hidden="true"></i>
-              <li class="projects-stack-list-item">Angular</li>
-              <li class="projects-stack-list-item">Node</li>
-              <li class="projects-stack-list-item">Express</li>
-              <li class="projects-stack-list-item">Pokeapi</li>
-              <li class="projects-stack-list-item">Heroku</li>
-            </ul>
-          </div>
-          <div class="projects-src">
-            <a href="https://github.com/damonnguyen92/basic-pokedex" target="_blank">
-              <i class="fa fa-github-square fa-2x" aria-hidden="true"></i> Pokédex source code
-            </a>
-          </div>
-        </div>
-        <div class="col-xs-6 right">
-          <a href="http://pokedex-mvp.herokuapp.com/#/" target="_blank">
-            <img class="projects-image-top" src="/images/pokedex1.png" alt="Pokédex result page">
-            <img class="projects-image-bottom" src="/images/pokedex2.png" alt="Pokédex result page">
-            <span><i class="fa fa-external-link fa-5x top" aria-hidden="true"></i></span>
-            <span><i class="fa fa-external-link fa-5x bottom" aria-hidden="true"></i></span>
-          </a>
-        </div>
-      </div>
-    </section>
-
+    <%- include passion.ejs %>
+    <!-- projects2 -->
+    <%- include project2.ejs %>
     <!-- Hobbies -->
-    <section id="hobbies" >
-      <div class="container text-center">
-        <h5>Interest and Hobbies</h5>
-      </div>
-      <div class="col-xs-4 hobby">
-        <h6>Popping</h6>
-        <img src="/images/popping.png">
-        <p>Popping is a street dance that is comprised of many styles(waving, strutting, animation) and you usually dance to funk music. </p>
-      </div>
-      <div class="col-xs-4 hobby">
-        <h6>Brazilian Jiu-Jiutsu</h6>
-        <img src="/images/bjj.png">
-        <p>I enjoy bjj because it's a good way to excercise and stay healthy. Joining a bjj gym opens door to making new friends, build confident and discipline. To be able to submit someone without being submitted is extremely fun.</p>
-      </div>
-      <div class="col-xs-4 hobby">
-        <h6>Super Smash Brothers</h6>
-        <img src="/images/smash.png">
-        <p>Super Smash Bros is the only video game that I play. The only reason why I bought a Wii U is only for this game. Something about knocking your opponent off the edge of a cliff is so rewarding!</p>
-      </div>
-      <div class="col-xs-4 hobby">
-        <h6>Star Trek</h6>
-        <img src="/images/startrek.png">
-        <p>Call me a nerd, but I think Star Trek is awesome! The problems that the characters in the show face are very similar to the problems we face today. It is amazing how old this show is, but how ahead of it's time it is.</p>
-      </div>
-    </section>
+    <%- include hobbies.ejs %>
+    <!-- projects3 -->
+    <%- include project3.ejs %>
+    <!-- footer -->
+    <%- include footer.ejs %>
 
-    <!-- projects -->
-    <section id="project3" class="text-center">
-      <div class="container">
-        <div class="col-xs-6 left">
-          <h2 style="color: white;">Spontaneó </h2>
-          <div class="projects-description">
-            <p>Are you the type of person who has a difficult time deciding what to do? Where to eat? Spontaneó is the application to solve that problem. Spontaneó is a web application that allows users to generate spontaneous ideas, gifts, and restaurants based off
-            geolocation, so no more getting stuck because Spontaneó is here to save the day!</p>
-          </div>
-          <div class="projects-stack">
-            <h4 style="color: #FFFFFF;"><i class="fa fa-user-circle fa-2x" aria-hidden="true"></i> Full Stack</h4>
-            <ul class="projects-stack-list">
-              <i class="fa fa-list fa-2x" aria-hidden="true"></i>
-              <li class="projects-stack-list-item">Angular</li>
-              <li class="projects-stack-list-item">Node</li>
-              <li class="projects-stack-list-item">Express</li>
-              <li class="projects-stack-list-item">Yelp API</li>
-              <li class="projects-stack-list-item">Wikipedia API</li>
-            </ul>
-          </div>
-          <div class="projects-src">
-            <a href="https://github.com/dial-up/spontaneo" target="_blank">
-              <i class="fa fa-github-square fa-2x" aria-hidden="true"></i> Spontaneó  source code
-            </a>
-          </div>
-        </div>
-        <div class="col-xs-6 right">
-          <a href="http://pokedex-mvp.herokuapp.com/#/" target="_blank">
-            <img class="projects-image-top" src="/images/Spontaneó1.png" alt="Pokédex result page">
-            <img class="projects-image-bottom" src="/images/Spontaneó2.png" alt="Pokédex result page">
-            <span><i class="fa fa-external-link fa-5x top" aria-hidden="true"></i></span>
-            <span><i class="fa fa-external-link fa-5x bottom" aria-hidden="true"></i></span>
-          </a>
-        </div>
-      </div>
-    </section>
 
-    <footer id="footer">
-      <p>Copyright © Damon Nguyen 2017  | All Rights Reserved </p>
-    </footer>
-
-    <script src="https://use.fontawesome.com/78f754ebab.js"></script>
-    <script src="/javascripts/TweenLite.min.js"></script>
-    <script src="/javascripts/EasePack.min.js"></script>
-    <script src="/javascripts/canvasAnimation.js"></script>
+    <%- include js.ejs %>
 </html>
