@@ -1,17 +1,17 @@
 #projects {
-    width: 100%;
-    margin: 0;
-    height: 660px;
-    background-image: url('/images/mosiac.jpg');
-    background-size:cover;
-    background-position:center center;
-    background-attachment:fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-repeat: none;
-    // opacity: 0.9;
+  width: 100%;
+  margin: 0;
+  height: 660px;
+  background-image: url('/images/mosiac.jpg');
+  background-size:cover;
+  background-position:center center;
+  background-attachment:fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: none;
+
     .left {
       color: #FFFFFF;
       padding-top: 90px;
@@ -30,44 +30,85 @@
         }
         .projects-src {
           padding-top: 10px;
-          a {
-            text-decoration: none;
-          }
+          text-decoration: none;
         }
       }
     }
 
-    .right {
-      position: relative;
-      padding: 0px;
-      // background-color: #E9EBEE;
-      .projects-image-top,  .projects-image-bottom {
-        margin-top: 8px;
-        max-width:89%;
-        max-height:89%;
-        border:1px solid;
-        border-color: #e5e6e9 #dfe0e4 #d0d1d5;
-        -webkit-transition: all 1s ease;
-           -moz-transition: all 1s ease;
-             -o-transition: all 1s ease;
-            -ms-transition: all 1s ease;
-                transition: all 1s ease;
-      }
-      .projects-image-top:hover,  .projects-image-bottom:hover {
-        -webkit-filter: grayscale(100%);
-      }
-      .top {
-        position: absolute;
-        left: 45%;
-        top: 20%;
-        display: none;
-      }
-      .bottom {
-        position: absolute;
-        top: 70%;
-        left: 45%;
-        display: none;
-      }
-    }
+  //hover effect
+  .effects .img {
+    position: relative;
+    overflow: hidden;
+  }
 
+  .effects .img img {
+    display: block;
+    margin: 0;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    max-width: 89%;
+    height: auto;
+  }
+  .overlay {
+    display: block;
+    position: absolute;
+    z-index: 20;
+    background: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    transition: all 0.5s;
+  }
+  //overlay option displayed
+  a.close-overlay {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 45px;
+    text-align: center;
+    background-color: #000;
+    cursor: pointer;
+  }
+  //overlay option hidden
+  a.close-overlay.hidden {
+    display: none;
+  }
+
+  a.expand {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    text-align: center;
+    color: #fff;
+    line-height: 50px;
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  #effect-1 .overlay {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 89%;
+    height: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #effect-1 .overlay a.expand {
+    left: 0;
+    right: 0;
+    bottom: 50%;
+    margin: 0 auto -30px auto;
+  }
+  #effect-1 .img.hover .overlay {
+    height: 98%;
+  }
 }
+
