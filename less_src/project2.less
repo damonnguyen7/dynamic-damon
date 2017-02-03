@@ -1,70 +1,41 @@
 #project2 {
-    width: 100%;
-    margin: 0;
-    height: 660px;
-    background-image: url('/images/comb.png');
-    background-size:cover;
-    background-position:center center;
-    background-attachment:fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-repeat: none;
-    // opacity: 0.9;
-    .left {
-      color: #FFFFFF;
-      padding-top: 90px;
-      .projects-description {
-        p {
-          font-family: 'Raleway', Calibri, Arial, sans-serif;
-          // font-size: 20px;
-          font-size: 3.5vmin;
-        }
-      }
-      .projects-stack {
-        .projects-stack-list {
-          padding-top: 10px;
-          list-style-type: none;
-          font-size: 12px;
-        }
-        .projects-src {
-          padding-top: 10px;
-          a {
-            text-decoration: none;
-          }
-        }
+  width: 100%;
+  margin: 0;
+  height: 660px;
+  background-image: url('/images/comb.png');
+  background-size:cover;
+  background-position:center center;
+  background-attachment:fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: none;
+
+  .left {
+    color: #FFFFFF;
+    padding-top: 90px;
+    .projects-description {
+      p {
+        font-family: 'Raleway', Calibri, Arial, sans-serif;
+        // font-size: 20px;
+        font-size: 3.5vmin;
       }
     }
-
-    .right {
-      .projects-image-top,  .projects-image-bottom {
-        // background-color: #E9EBEE;
-        margin-top: 15px;
-        width: 89%;
-        border:1px solid;
-        border-color: #e5e6e9 #dfe0e4 #d0d1d5;
-        -webkit-transition: all 1s ease;
-           -moz-transition: all 1s ease;
-             -o-transition: all 1s ease;
-            -ms-transition: all 1s ease;
-                transition: all 1s ease;
+    .projects-stack {
+      .projects-stack-list {
+        padding-top: 10px;
+        list-style-type: none;
+        font-size: 12px;
       }
-      .projects-image-top:hover,  .projects-image-bottom:hover {
-        -webkit-filter: grayscale(100%);
-      }
-      .top {
-        position: absolute;
-        left: 45%;
-        top: 20%;
-        display: none;
-      }
-      .bottom {
-        position: absolute;
-        top: 70%;
-        left: 45%;
-        display: none;
+      .projects-src {
+        padding-top: 10px;
+        text-decoration: none;
       }
     }
-
+  }
+  
+  //mixin with the hover logic
+ .overlayHover
 }
+
