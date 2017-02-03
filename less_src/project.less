@@ -12,103 +12,30 @@
   background-size: cover;
   background-repeat: none;
 
-    .left {
-      color: #FFFFFF;
-      padding-top: 90px;
-      .projects-description {
-        p {
-          font-family: 'Raleway', Calibri, Arial, sans-serif;
-          // font-size: 20px;
-          font-size: 3.5vmin;
-        }
-      }
-      .projects-stack {
-        .projects-stack-list {
-          padding-top: 10px;
-          list-style-type: none;
-          font-size: 12px;
-        }
-        .projects-src {
-          padding-top: 10px;
-          text-decoration: none;
-        }
+  .left {
+    color: #FFFFFF;
+    padding-top: 90px;
+    .projects-description {
+      p {
+        font-family: 'Raleway', Calibri, Arial, sans-serif;
+        // font-size: 20px;
+        font-size: 3.5vmin;
       }
     }
-
-  //hover effect
-  .effects .img {
-    position: relative;
-    overflow: hidden;
+    .projects-stack {
+      .projects-stack-list {
+        padding-top: 10px;
+        list-style-type: none;
+        font-size: 12px;
+      }
+      .projects-src {
+        padding-top: 10px;
+        text-decoration: none;
+      }
+    }
   }
 
-  .effects .img img {
-    display: block;
-    margin: 0;
-    margin-top: 8px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
-    max-width: 89%;
-    height: auto;
-  }
-  .overlay {
-    display: block;
-    position: absolute;
-    z-index: 20;
-    background: rgba(0, 0, 0, 0.8);
-    overflow: hidden;
-    transition: all 0.5s;
-  }
-  //overlay option displayed
-  a.close-overlay {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 100;
-    width: 45px;
-    height: 45px;
-    font-size: 20px;
-    font-weight: 700;
-    color: #fff;
-    line-height: 45px;
-    text-align: center;
-    background-color: #000;
-    cursor: pointer;
-  }
-  //overlay option hidden
-  a.close-overlay.hidden {
-    display: none;
-  }
-
-  a.expand {
-    display: block;
-    position: absolute;
-    z-index: 100;
-    text-align: center;
-    color: #fff;
-    line-height: 50px;
-    font-weight: 700;
-    font-size: 30px;
-  }
-
-  #effect-1 .overlay {
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 89%;
-    height: 0;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  #effect-1 .overlay a.expand {
-    left: 0;
-    right: 0;
-    bottom: 50%;
-    margin: 0 auto -30px auto;
-  }
-  #effect-1 .img.hover .overlay {
-    height: 98%;
-  }
+  //mixin with all the hover logic
+  .overlayHover
 }
 
