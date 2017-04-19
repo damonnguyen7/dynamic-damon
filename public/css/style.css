@@ -3683,3 +3683,8 @@ yx-axis
 .color-picker .skin a.actt {
 	border: 2px #FFF solid;
 }
+
+.carousel-img {
+  height: 300px;
+  width: 300px
+}
