@@ -1,0 +1,15 @@
+.border-left-hover:hover, .navbar .nav> li.active> a, .border-left-section-theme-color {
+	border-left: 10px #3CB884 solid;
+}
+
+a:hover, .media-container:hover h3.media-title, h3.blog-title a:hover .tab-content h3, .error-404 .text h1, blockquote, #footer a:hover, .accordion-heading a.accordion-toggle.accordion-active, .page-link:hover {
+	color: #3CB884;
+}
+
+.media-file .cross, .media-file-2 .cross, .media-file-3 .cross {
+	background-color: rgba( 60, 184, 132, 0.7);
+}
+
+.navbar .nav li.active ul li, .nav-tabs li.nav-item a.active .rs-2, .nav-tabs li.nav-item a.active .rl-1, .nav-tabs li.active a .rs-2, .nav-tabs li.active a .rl-2, .nav-tabs li.active a:hover .rs-2, .nav-tabs li.active a:hover .rl-2, .nav-tabs li a:hover .rs-2, .nav-tabs li a:hover .rl-1, .services-img-text-1, .social-1 li a:hover i, .mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+	background: #3CB884!important;
+}

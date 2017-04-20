@@ -1,34 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title><%= title %></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/favicon.ico">
+    <title>Damon Nguyen</title>
     <%- include css.ejs %>
   </head>
   <body>
-
-  <div class="container">
     <!-- navbar -->
     <%- include navbar.ejs %>
-    <!-- Canvas graphics -->
-    <%- include space.ejs %>
-    <!-- introduction -->
-    <%- include introduction.ejs %>
-    <!-- projects -->
-    <%- include project.ejs %>
-    <!-- projects3 -->
-    <%- include project3.ejs %>
-    <!-- project4 -->
-    <%- include project4.ejs %>
-    <!-- projects2 -->
-    <%- include project2.ejs %>
-    <!-- passion -->
-    <%- include passion.ejs %>
-    <!-- Hobbies -->
-    <!-- <%- include hobbies.ejs %> -->
-    <!-- footer -->
+    <%- include body.ejs %>
     <%- include footer.ejs %>
-  </div>
-
     <%- include js.ejs %>
+  </body>
 </html>
