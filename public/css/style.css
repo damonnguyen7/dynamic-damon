@@ -3688,3 +3688,7 @@ yx-axis
   height: 300px;
   width: 300px
 }
+
+.about-resume {
+display: inherit;	
+}
