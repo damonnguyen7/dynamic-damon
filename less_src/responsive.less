@@ -40,9 +40,10 @@
       font-size: 30px;
     }
     .about-p {
-      font-size: 26px;
-      line-height: 1.5;
-      text-indent: 50px;
+      width: 70%;
+      margin: 0px auto;
+      padding: 25px 0px;
+      text-indent: 25px;
     }
   }
   .content-box > * {
@@ -51,6 +52,9 @@
 }
 
 @media only screen and (max-width: 991px) {
+  #about {
+    height: 950px;
+  }
   #selectnav1 {
     margin-top: 56px;
   }
@@ -82,30 +86,32 @@
     }
   }
   #about {
-    height: 1050px;
+    height: 950px;
     .about-h3 {
       text-align: center;
       font-size: 30px;
     }
     .about-p {
-      font-size: 24px;
-      line-height: 1.4;
-      text-indent: 50px;
+      text-indent: 25px;
     }
   }
 }
 
 @media only screen and (max-width: 500px) {
   #about {
-    height: 1050px;
+    height: 950px;
     .about-p {
-      font-size: 23px;
+      text-indent: 25px;
     }
   }
 }
 
 @media only screen and (max-width: 400px) {
   #about {
-    height: 1130px;
+    height: 850px;
+    .about-p {
+      text-indent: 25px;
+      width: 80%;
+    }
   }
 }
