@@ -8,6 +8,10 @@ router.get('/', function(req, res, next) {
 
 router.get('/this', function(req, res, next) {
   res.render('blog-item-detail/this.ejs', { title: 'About this'});
-})
+});
+
+router.get('/ajax', function(req, res, next) {
+  res.render('blog-item-detail/ajax.ejs', { title: 'About Ajax'});
+});
 
 module.exports = router;
