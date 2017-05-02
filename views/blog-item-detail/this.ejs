@@ -45,10 +45,10 @@
         <p>The only difference between call() and apply() would be how we define the arguments we want to use for the function that we want to invoke. call() would take in a single argument as the second parameter and anything after would be the next argument in the sequence. For apply() the second parameter would take in an array of arguments. The syntax is fairly simple:</p>
         <p class="text-center">func.call(<span class="js-this">thisContext</span>, arg, arg..);</p>
         <p class="text-center">or</p>
-        <p class="text-center">func.call(<span class="js-this">thisContext</span>, [args, arg..]);</p>
+        <p class="text-center">func.apply(<span class="js-this">thisContext</span>, [args, arg..]);</p>
       </div>
 
-      <h1 class="text-center col-xs-12">Hard Binding</h1>
+     <h1 class="text-center col-xs-12">Hard Binding</h1>
       <div class="col-xs-12 col-md-8 col-md-offset-2">
         <p>In some cases, the <span class="js-this">this</span> binding loses its object context especially if we want to pass the method as a callback function. For example: </p>
         <img src="/images/blog-images/js-this/hard1.png">
