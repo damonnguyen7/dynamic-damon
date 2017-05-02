@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/public/images/favicon.ico">
+    <title>Damon Nguyen</title>
+    <%- include ../css.ejs %>
+  </head>
+  <body>
+    <%- include ../navbar.ejs %>
+    <div class="container blog-ajax">
+      <div class="col-xs-12 col-md-8 col-md-offset-2">
+        <img src="/images/blog-images/js-ajax/ajax.png">
+        <h1 class="text-center">What is Ajax and what is it used for?</h1>
+        <p>Ajax is an acronym for Asynchronous JavaScript and XML and it is a client-side script used for communicating with server or database retrieving data and updating web pages without having to reload the page. Ajax generally involves sending HTTP request from the client to communicate with the server and the server handles the request and responds back to the client asynchronously. Ajax can send and receive a variety of data like JSON, XML, HTML, and text files. Most often Ajax uses the XMLHttpRequest object for exchanging data between the client and the server. After the client-side have received the data it creates new HTML to be put on the current page.</p>
+        <img src="/images/blog-images/js-ajax/ajaxflow.png">
+        <p style="padding-bottom: 25px;">The image above illustrates the interaction between client and server using Ajax. Each event could represent a user interaction ranging from submission of a form or a button that grabs data from the server using Ajax as a carrier of HTTP action and data. Ajax is great for making SPA(single page application) and creating an interactive user experience for the modern web.</p>
+      </div>
+    </div>
+    <%- include ../footer.ejs %>
+    <%- include ../js.ejs %>
+  </body>
+</html>
