@@ -15,7 +15,11 @@ router.get('/ajax', function(req, res, next) {
 });
 
 router.get('/closure', function(req, res, next) {
-  res.render('blog-item-detail/closure.ejs', { title: 'About Ajax'});
+  res.render('blog-item-detail/closure.ejs', { title: 'About Closure'});
+});
+
+router.get('/FCC-basic-algos', function(req, res, next) {
+  res.render('blog-item-detail/FCC-basic-algos.ejs', { title: 'FCC basic algorithms'});
 });
 
 module.exports = router;
