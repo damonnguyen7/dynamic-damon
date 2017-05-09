@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/public/images/favicon.ico">
+    <title>Damon Nguyen</title>
+    <%- include ../css.ejs %>
+  </head>
+  <body>
+    <%- include ../navbar.ejs %>
+    <div class="container blog-closure">
+      <div class="col-xs-12 col-md-8 col-md-offset-2">
+        <img src="/images/blog-images/js-closure/closure-card.jpg" style="padding-top: 45px;">
+        <h1 class="text-center">What is Closure in JavaScript</h1>
+        <p>A closure is when an inner function has access to the outer function’s variables even though the outer function has already returned and it also has access to the global scope's variables.</p>
+        <p>Here is a basic example of closure in JavaScript.</p>
+        <img src="/images/blog-images/js-closure/closure.png">
+        <p>The code snippet above demonstrates how the inner function(IIFE - immediately invoked function) has access to its own variable <b>intro</b> and also has access to the outer function <b>personGreet</b>'s variables or parameter even though it has already returned.</p>
+        <p>Checkout this code: </p>
+        <img src="/images/blog-images/js-closure/expression.png">
+        <p>What happens in this line of code is that we are trying to return an expression based on three variables. When JavaScript encounter the variable <b>intro</b> it ask itself "do I have the value to the variable <b>intro</b> within my scope? Yes I do, so I’ll use it". When it encounters the variables <b>firstName</b> and <b>lastName</b> it would ask a similar question "do I have the values to the variables <b>firstName</b> and <b>lastName</b> with my scope?". In this case it cannot find the corresponding values within its scope, therefore it would look at the scope one level up and find the values in <b>personGreet</b> function and use it. Hypothetically speaking if <b>firstName</b> and <b>lastName</b> didn’t exist then it would keep searching up the scope chain until it reaches the global scope and if the global scope doesn’t have the values for the corresponding variables than <b>firstName</b> and <b>lastName</b> would be undefined.</p>
+        <p>This mechanism that I am describing is called lexical scoping rule.</p>
+        <img src="/images/blog-images/js-closure/closure2.png">
+        <p>I created another example with a function that counts to three, but this time I created a global variable(<b>one</b>) in which the most inner function(IFFE) within <b>countToThree</b> would have access to. This is all possible because of the lexical scoping rule.</p>
+        <p>The general pattern is that the innermost scope will have access to all of the outer scopes that encapsulate it, but it is never the other way around. The only way to create scopes in JavaScript is through functions.</p>
+        <img src="/images/blog-images/js-closure/wifeNotDefined.png">
+        <p style="padding-bottom: 25px;">In the example above, the global scope has access to its own variable <b>car</b>, but it doesn’t have access to the <b>wife</b> variable within the <b>house</b> function. The <b>wife</b> variable is considered a private variable that the global scope does not have access to. If we had another function within the <b>house</b> function, the <b>house</b> function does not have access to the variables within that function.</p>
+      </div>
+    </div>
+    <%- include ../footer.ejs %>
+    <%- include ../js.ejs %>
+  </body>
+</html>
