@@ -14,4 +14,8 @@ router.get('/ajax', function(req, res, next) {
   res.render('blog-item-detail/ajax.ejs', { title: 'About Ajax'});
 });
 
+router.get('/closure', function(req, res, next) {
+  res.render('blog-item-detail/closure.ejs', { title: 'About Ajax'});
+});
+
 module.exports = router;
